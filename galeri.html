@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta name="viewport" content="with=device-width, initial-scale=1.0">
+		<title> Galeri </title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<section class="header-galeri">
+			<nav class="nav-galeri">
+				<a href="https://sman16sby.sch.id/"> <img src="logo-sman-16-png.png"></a>
+				<div class="nav-links-galeri">
+					<ul>
+						<li> <a href="sekolah_informatika.html">HOME</a></li>
+						<li> <a href="about.html">TENTANG PEMBUAT</a></li>
+						<li> <a href="galeri.html">GALERI</a></li>
+						<li> <a href="materi.html">MATERI</a></li>
+						<li> <a href="buku tamu.html">BUKU TAMU</a></li>
+
+					</ul>
+				</div>
+			</nav>
+
+			<div class="text-box-galeri">
+				<h1>Galeri</h1>
+				<p>Tempat untuk melihat karya design oleh Elrond Rafsa Adjani</p>
+				<a href="#start foto galeri" class="main-btt-galeri"> Lihat Galeri</a>
+			</div>
+		</section>
+
+		<h1 id="start foto galeri" style="text-align: center; color: #fff; background: rgba(31, 31, 31,1); padding:3%; font-size: 48px;"> 3D Rendered Image (blender)</h1>
+		<section class="foto-foto-galeri" id="foto-foto-galeri">
+			<div class="slider">
+		      	<div class="slides">
+			        <!--radio buttons start-->
+					<input type="radio" name="radio-btn" id="radio1">
+			        <input type="radio" name="radio-btn" id="radio2">
+			        <input type="radio" name="radio-btn" id="radio3">
+			        <!--radio buttons end-->
+			        <!--slide images start-->
+			        <div class="slide first">
+			        	<img src="marionette solo.png">
+			        </div>
+			        <div class="slide">
+			        	<img src="scene-marionette dance sisi kiri.png">
+			        </div>
+			        <div class="slide">
+			        	<img src="spesial agustusan ver 4.png">
+			        </div>
+			        <!--slide images end-->
+			        <!--automatic navigation start-->
+			        <div class="navigation-auto">
+			        	<div class="auto-btn1"></div>
+			          	<div class="auto-btn2"></div>
+			          	<div class="auto-btn3"></div>
+		        	</div>
+		        <!--automatic navigation end-->
+		      </div>
+		      <!--manual navigation start-->
+		      <div class="navigation-manual">
+		      	<label for="radio1" class="manual-btn"></label>
+		       	<label for="radio2" class="manual-btn"></label>
+		        <label for="radio3" class="manual-btn"></label>
+		      </div>
+		      <!--manual navigation end-->
+		    </div>
+		    <!--image slider end-->
+
+		    <script type="text/javascript">
+		    var counter = 1;
+		    setInterval(function(){
+		      document.getElementById('radio' + counter).checked = true;
+		      counter++;
+		      if(counter > 4){
+		        counter = 1;
+		      }
+		    }, 5000);
+		    </script>
+		</section>
+
+		<h1 id="start animasi galeri" style="text-align: center; color: #fff; background: rgba(31, 31, 31,1); padding:3%; font-size: 48px;"> 3D Animation (blender)</h1>
+		<section class="animasi-galeri" id="animasi-galeri">
+			<video width="800" height="500" controls> 
+				<source src="block animation 3d.mp4" type="video/mp4">
+			</video>
+		</section>
+	</body>
+
+
+</html>
